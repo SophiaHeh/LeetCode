@@ -1,1 +1,2 @@
-# LeetCode solution for reference
+# LeetCode 
+solutions in python
