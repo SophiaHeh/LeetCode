@@ -4,19 +4,19 @@ import numpy as np
 '''
 
 num_rolls = 1000
-die1 = np.random.randint(1, 7, num_rolls) #die1 already is numpy array
+die1 = np.random.randint(1, 7, num_rolls) #die1 already is numpy array(ask TA, why don'a have to change data type to array?)
 
 die2 = np.random.randint(1, 7, num_rolls)
 
 sum_dice = die1 + die2
 
 #count_list = [0] *11
-count_list = np.zeros(11)
+count_list = np.zeros(11) #效果和[0] * 11一樣
 
 for i in range(2, 13):
     for val in sum_dice:
         if val == i:
-            count_list[i-2] += 1
+            count_list[i-2] += 1 #-2是為了配合index從零開始的特性
 print(count_list)
             
 '''
